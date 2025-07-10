@@ -1,11 +1,16 @@
 /* Container for the whole app */
 .app-container {
   font-family: Arial, sans-serif;
-  padding: 1.5rem;
-  height: 100vh;
+  padding: 2rem;
+  height: 80vh;
+  width: 90vw;
   box-sizing: border-box;
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
+  margin-left: 4rem;
+  background-color: #cce4ff;
+  text-align: center;;
+  border-radius: 10px;
 }
 
 /* Left side: History */
@@ -16,7 +21,7 @@
   padding: 1rem;
   overflow-y: auto;
   max-height: 100%;
-
+  background-color: #f2f8ff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,6 +43,7 @@
   border-bottom: 1px solid #ddd;
   padding-bottom: 0.5rem;
   padding-left: 0.5rem;
+  background-color: white;
 }
 
 /* Image in history */
@@ -54,40 +60,45 @@
   text-align: center;
   border: 1px solid #ccc;
   border-radius: 8px;
-  padding: 2rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; /* center horizontally */
   gap: 1.5rem;
+  background-color: #f2f8ff;
 }
 
 .current-dog img {
-  max-width: 400px;
+  max-width: 300px;
   border-radius: 12px;
-  margin-bottom: 1rem;
+  width: 300px;
+  height: 300px;
 }
 
 /* Attributes container as flex row */
 .attributes-container {
   display: flex;
-  gap: 2rem;
   justify-content: center;
-  margin-bottom: 1rem;
+  margin-bottom: 0.1rem;
+  background-color: #dae6fd;
+  border-radius: 5px;
 }
 
 /* Each attribute styled as clickable */
 .clickable-attribute {
   cursor: pointer;
-  color: blue;
-  text-decoration: underline;
-  padding: 0.25rem 0.5rem;
+  color: black;
+  padding: 0.50rem;
   border-radius: 4px;
   transition: background-color 0.2s ease;
+  background-color: white;
+  
 }
 
 .clickable-attribute:hover {
   background-color: #e0f0ff;
+  border: 2px solid #5da3f3;
 }
 
 /* Ban list (right side) */
@@ -98,7 +109,7 @@
   padding: 1rem;
   max-height: 100%;
   overflow-y: auto;
-
+  background-color: #f2f8ff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -131,13 +142,12 @@
 
 /* Button styling */
 button.discover-btn {
-  margin-top: 1rem;
   padding: 0.75rem 1.5rem;
   align-self: center;
   font-size: 1rem;
   border-radius: 6px;
   border: 1px solid #007bff;
-  background-color: #007bff;
+  background-color: #378be4;
   color: white;
   cursor: pointer;
   transition: background-color 0.3s ease;
