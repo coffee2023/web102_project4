@@ -150,9 +150,13 @@ button.discover-btn {
   background-color: #378be4;
   color: white;
   cursor: pointer;
+  font-size: 25px;
   transition: background-color 0.3s ease;
 }
 
 button.discover-btn:hover {
   background-color: #0056b3;
+}
+p{
+  margin-right: 20px;;
 }

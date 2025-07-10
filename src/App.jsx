@@ -96,7 +96,7 @@ const App = () => {
 
       {/* Middle - Current Dog */}
       <main className="current-dog">
-        <h1>🐕 Dog Discoverer</h1>
+        <h1>🐕 Discover Dogs! 🐕</h1>
 
         {loading && <p>Loading a dog for you...</p>}
 
@@ -140,7 +140,7 @@ const App = () => {
         )}
 
         <button className="discover-btn" onClick={fetchDog}>
-          Discover Another Dog
+          Discover New Dog
         </button>
       </main>
 
@@ -148,7 +148,7 @@ const App = () => {
       <aside className="ban-list-section">
         <h2>🚫 Ban List</h2>
         {banList.length === 0 ? (
-          <p>No banned attributes yet. Click any attribute above to ban it.</p>
+          <p>No banned attributes selected. Click any attribute to ban it.</p>
         ) : (
           <ul className="ban-list">
             {banList.map((item, idx) => (
